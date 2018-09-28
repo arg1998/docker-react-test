@@ -5,5 +5,5 @@ service:
 before_install:
   - docker build -t arg1998/docker-react-test -f Dockerfile.dev .
 
-scripts:
+script:
   - docker run arg1998/docker-react-test npm run test -- --coverage
